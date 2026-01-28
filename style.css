@@ -1,60 +1,107 @@
+/* Dark Premium Theme - Zerix Development */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #0b0b0b; /* Diep zwart/grijs */
+    color: #e0e0e0;
+    margin: 0;
 }
 
-.bg-black {
-    background-color: #000 !important;
+/* Navigatie Verbetering */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    border-bottom: 1px solid #222;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+}
+
+/* Kaarten en Secties */
+.content-card {
+    background: #161616;
+    border: 1px solid #222;
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.content-card:hover {
+    border-color: #0d6efd;
+    box-shadow: 0 0 20px rgba(13, 110, 253, 0.2);
 }
 
 .text-primary {
-    color: #0d6efd !important; /* De blauwe kleur uit je logo */
+    color: #0d6efd !important;
 }
 
+/* Hero Titles */
+.page-header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1500');
+    background-size: cover;
+    padding: 100px 0 60px 0;
+    border-bottom: 2px solid #0d6efd;
+}
+
+/* Knoppen */
 .btn-primary {
     background-color: #0d6efd;
     border: none;
-    transition: transform 0.2s ease;
+    padding: 10px 25px;
+    border-radius: 8px;
 }
 
-.btn-primary:hover {
-    transform: scale(1.05);
-    background-color: #0b5ed7;
-}
-
-/* Hero Section */
-.hero-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), 
-                url('https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&w=1500&q=80');
+hr {
+    border-top: 1px solid #333;
+    opacity: 1;
+}/* Hero Section styling */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), 
+                url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1500');
     background-size: cover;
     background-position: center;
-    min-height: 60vh;
+    padding: 120px 0;
+    border-bottom: 2px solid #0d6efd;
 }
 
-/* Card Improvements */
-.info-card, .contact-card, .service-box {
-    background: white;
+/* Client Boxes */
+.client-box {
+    background: #1e1e1e;
+    border: 1px solid #333;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
-.service-box:hover {
-    border-color: #0d6efd !important;
-    background-color: #f0f7ff;
+.client-box:hover {
+    border-color: #0d6efd;
+    transform: translateY(-5px);
+    background: #252525;
 }
 
-.navbar-nav .nav-link {
+/* Algemene content cards */
+.content-card {
+    background: #161616;
+    border: 1px solid #222;
+    border-radius: 15px;
+    padding: 30px;
+}
+.border-dashed {
+    border: 2px dashed #333 !important;
+    background: transparent !important;
+}
+
+.badge {
     font-weight: 500;
-    transition: color 0.3s;
+    padding: 6px 12px;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #0d6efd !important;
-}
-
-/* Responsive fixes */
-@media (max-width: 991px) {
-    .hero-bg h1 {
-        font-size: 2.5rem;
-    }
+.bg-dark {
+    background-color: #222 !important;
 }
